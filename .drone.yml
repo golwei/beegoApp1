@@ -9,7 +9,7 @@ steps:
 - name: webApp1
   image: golang
   ports:
-  - 8081:8081
+  - 8081
   commands:
   - go get
   - go build
