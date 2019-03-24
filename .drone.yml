@@ -1,0 +1,16 @@
+kind: pipeline
+name: default
+
+workspace:
+  base: /go
+  path: src/github.com/golwei/beegoApp
+
+steps:
+- name: webApp1
+  image: golang
+  ports:
+  - 8081
+  commands:
+  - go get
+  - go build
+  - ./beegoApp
